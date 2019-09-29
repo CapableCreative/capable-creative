@@ -1,0 +1,121 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
+    line-height: 24px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    align-self: end;
+}
+/* --- SLF SCAFFOLDING ---------------------- */
+.fifth-flex {
+    width: 20%;
+    flex-basis: 20%;
+    box-sizing: border-box;
+}
+.fourth-flex {
+    width: 25%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+.third-flex {
+    width: 33%;
+    flex-basis: 33%;
+    box-sizing: border-box;
+}
+.half-flex {
+    width: 50%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+.two-third-flex {
+    width: 66%;
+    flex-basis: 66%;
+    box-sizing: border-box;
+}
+.three-fourth-flex {
+    width: 75%;
+    flex-basis: 75%;
+    box-sizing: border-box;
+}
+.full-flex {
+    width: 100%;
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+/* -- end SLF SCAFFOLDING ------------------- */
+.vport{
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+.vport .flex-item{
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+}
+.vport.home main {
+    margin: auto 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: baseline;
+    }
+    .vport.home main .flex-item{
+        margin: 40px;
+    }
+    .vport.home main .flameMouse{
+        flex-basis: 50%;
+    }
+    .vport.home main .pencil{
+        width: 3%;
+    }
+    .vport.home main .mpencil{
+        width: 4.5%;
+    }
+    .vport.home main .wacompencil{
+        width: 5%;
+    }
+.vport nav {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 100;
+    margin-top: 15vh;
+    }
+    .vport nav ul.nav-list {
+        list-style: none;
+    }
+    .vport nav ul.nav-list li {
+        margin-left: -30px;
+        padding-left: 0px;
+        line-height: 4rem;
+    }
+    .vport nav img{
+        max-width: 75%;
+    }
+
+@media screen and (max-width: 960px){
+    .flex-item.dsk-only{ 
+        display: none;
+    }
+    .vport.home main .flameMouse.mob-full{
+        flex-basis: 100%;
+        margin: 0%;
+    }
+    .vport nav, .vport main{
+        flex-basis: 100%;
+    }
+}
