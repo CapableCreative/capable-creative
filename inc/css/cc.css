@@ -7,13 +7,23 @@ body {
     font-size: 16px;
     font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
     line-height: 24px;
-}
+    color: #FFF;
+    }
+    body a{
+        color: #f78f1e;
+    }
+h1 {font-size:32px;font-weight:700;}
+h2 {font-size:26px;font-weight:500;}
+h3 {font-size:34px;font-weight:300;}
 img {
     max-width: 100%;
     height: auto;
     align-self: end;
 }
 /* --- SLF SCAFFOLDING ---------------------- */
+.cursor-add{
+    cursor: pointer;
+}
 .fifth-flex {
     width: 20%;
     flex-basis: 20%;
@@ -53,9 +63,10 @@ img {
 .vport{
     min-height: 100vh;
     width: 100%;
-    background: #000;
+    background: url('../img/swirls.png') #000;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 .vport .flex-item{
     align-content: center;
@@ -77,10 +88,10 @@ img {
         margin: 40px;
     }
     .vport.home main .flameMouse{
-        flex-basis: 50%;
+        flex-basis: 35%;
     }
     .vport.home main .pencil{
-        width: 3%;
+        width: 2.5%;
     }
     .vport.home main .mpencil{
         width: 4.5%;
@@ -88,12 +99,18 @@ img {
     .vport.home main .wacompencil{
         width: 5%;
     }
-.vport nav {
+nav.mainNav {
     color: #FFFFFF;
     font-size: 24px;
     line-height: 36px;
     font-weight: 100;
-    margin-top: 15vh;
+    padding-top: 15vh;
+    width: 33%;
+    justify-content: flex-end;
+    background-color: transparent;
+    position: fixed;
+    right: 0px;
+    z-index: 4;
     }
     .vport nav ul.nav-list {
         list-style: none;
@@ -103,10 +120,61 @@ img {
         padding-left: 0px;
         line-height: 4rem;
     }
+    .vport nav ul.nav-list li a{
+        color: #FFF;
+        text-decoration: none;
+        transition: all .35s;
+        }
+        .vport nav ul.nav-list li a:hover{
+            color: #2D99CD;
+        }
+        .vport nav ul.nav-list li a::after{
+            content: url('../img/plus.png');
+             margin: 0px;
+            padding: 10px;
+            line-height: 0px;
+            position: relative;
+            top: 10px;
+            transition: all .5s;
+            opacity: 0.0;
+            margin-left: 50px;
+        }
+        .vport nav ul.nav-list li a:hover::after{
+            opacity: 1.0;
+            margin-left: 0px;
+        }
     .vport nav img{
         max-width: 75%;
+        width: initial;
     }
-
+    .nav-owner {
+        margin-top: 80px;
+    }
+    nav h2{
+        font-size: 20px;
+    }
+    nav h2, nav p{
+        margin: 0px;
+        padding: 0px;
+    }
+    nav a {
+        text-decoration: none;
+    }
+/* -- PORTFOLIO ------------------------ */
+#defaultWrap {
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1.0;
+    transition: display .5s;
+}
+#portfolioWrap {
+    height:0px;
+    overflow: hidden;
+}
+.mbl-only {
+    display: none;
+}
+/* -- MEDIA QUERIES -------------------- */
 @media screen and (max-width: 960px){
     .flex-item.dsk-only{ 
         display: none;
@@ -114,8 +182,28 @@ img {
     .vport.home main .flameMouse.mob-full{
         flex-basis: 100%;
         margin: 0%;
+        opacity: .2;
     }
     .vport nav, .vport main{
         flex-basis: 100%;
+        min-width: 375px;
+        padding-left: 20px;
+        margin-left: 20px;
+        left: -20px;
+    }
+    .dsk-only {
+        display: none;
+    }
+    .mbl-only {
+        display: flex;
+    }
+    #disclaimer {
+        position:absolute; top: 10px;left: 0px;width: 250px;font-weight:bold; background: orange; padding: 10px; border-radius: 15px;border:5px solid #000;;box-sizing: border-box;
+    }
+    nav {
+        order: 1;
+    }
+    main {
+        order: 2;
     }
 }
