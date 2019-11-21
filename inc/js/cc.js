@@ -9,13 +9,6 @@ $( document ).ready(function() {
         $("#portfolioWrap").animate({height: '100vh'}, 250); 
         $("#portfolioWrap").animate({flexBasis: '75%'}, 105);      
         $("nav.mainNav").animate({width: '25%'}, 125);
+        $(".tagline").css({display: "none"});
     });
-
-    var thisSlide = $(".portSlide");
-    $(thisSlide).on("click", function(){
-        $(this).toggleClass('activeSlide'); 
-        });
-    });
-
-       
-    
+});
