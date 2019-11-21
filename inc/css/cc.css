@@ -498,15 +498,6 @@ nav.mainNav {
     padding: 0px 0px;
     transition: all .25s;
 }
-.portSlide:nth-child(even) h2{
-    background: rgba(43,147,197,0.6);
-}
-.portSlide:nth-child(odd) h2{
-    background: rgba(254,207,54,0.6);
-}
-.portSlide h2:hover {
-    background: none;
-}
 
 .activeSlide{
   position: absolute;
