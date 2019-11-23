@@ -1,0 +1,97 @@
+body{
+    background: #000;
+}
+img {
+    max-width: 100%;
+}
+#mainNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+#mainNav img{
+    display: block;
+    max-width: 200px;
+    margin-right: 40px;
+}
+.navbar-collapse.collapse.in {
+  display: block!important;
+}
+a.nav-link{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+    a.nav-link:hover {
+        color: #FEC013;
+    }
+.navbar-brand {
+    width: 200px;
+    padding: 0px 0px 0px 0px;
+}
+#intro {
+    background: url(../img/ccbkgrd.jpg) center center no-repeat #000;
+    height: 70vh;
+    margin-top: -10vh;
+    background-size: cover;
+}
+.identity-wrap{
+    position: relative;
+    top: calc(30vh - 100px);
+}
+#intro h2{
+    font-size: 6rem;
+    margin-left: 20%;
+    color:  #FFF;
+    font-family: 'Abril fatface', 'Garamond Pro','Helvetica', sans-serif;
+}
+.mbl-only{
+    display: none;
+}
+
+button.navbar-toggler{
+    border: #FEC013 1px solid;
+}
+.fas{
+    color: #FEC013;
+    padding-bottom: 10px;
+}
+.portfolioBkgrd {
+    background: url(../img/portBkgrd.jpg) no-repeat center top
+}
+#portfolio{
+    background: rgba(14,85,109,0.95);
+    min-height: 50vh;
+    align-content: center;
+    justify-content: center;
+}
+#portPrev, #portNext, .currentPort{
+    height: 50vh;
+    background: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#portPrev{
+    flex: 15%;
+    margin-right: calc(1.66667% / 2);
+    border-radius: 0px 20px 20px 0px;
+}
+#portNext {
+    flex: 15%;
+    margin-left: calc(1.66667% / 2);
+    border-radius: 20px 0px 0px 20px;
+}
+.currentPort{
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 960px){
+    .dsk-only{
+        display: none;
+    }
+    .mbl-only{
+        display: flex;
+    }
+}
