@@ -65,28 +65,53 @@ button.navbar-toggler{
     min-height: 50vh;
     align-content: center;
     justify-content: center;
+    border-top: 3px solid #FEC013;
+    border-bottom: 3px solid #FEC013;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
-#portPrev, #portNext, .currentPort{
-    height: 50vh;
-    background: rgba(255,255,255,0.3);
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#portfolio h2{
+    color: #FFF;
+    font-family: 'Abril Fatface','Garamond Pro','Helvetica Neue',sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
 }
-#portPrev{
-    flex: 15%;
-    margin-right: calc(1.66667% / 2);
-    border-radius: 0px 20px 20px 0px;
+#portfolio .portItem {
+    background: #FFF;
+    padding: 20px;
 }
-#portNext {
-    flex: 15%;
-    margin-left: calc(1.66667% / 2);
-    border-radius: 20px 0px 0px 20px;
+#portfolio .card{
+    max-width: 22.5%;
+    margin: 1.25%;
+    border-radius: 0px 0px 0px 0px;
+    border: none;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
 }
-.currentPort{
-    border-radius: 20px;
+.card img{
+    border-radius: 0px 0px 0px 0px;
 }
-
+.card h5{
+    font-family: 'Abril Fatface','Garamond Pro', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #666;
+}
+.card h6{
+    font-style: italic;
+    font-weight: normal;
+    color: #999;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ccc;
+}
+.btn.btn-primary{
+    background: #FEC013;
+    font-weight: 900;
+    text-shadow: -1px 1px 0px rgba(0,0,0,0.3);
+    font-family: 'Helvetica Neue','Helvetica',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+}
 @media screen and (max-width: 960px){
     .dsk-only{
         display: none;
