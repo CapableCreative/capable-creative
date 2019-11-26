@@ -12,7 +12,18 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     height: 10vh;
+    z-index: 10;
 }
+.navbar-collapse li{
+    padding: 0px 10px;
+    background :#fafafa;
+}
+.navbar-collapse li a{
+    background: #FFF;
+    padding: 10px;
+    color: #FEC013;
+}
+
 #mainNav img{
     display: block;
     max-width: 200px;
@@ -111,7 +122,8 @@ button.navbar-toggler{
     width: 100%;
 }
 .tagline {
-    margin-top: 15vh;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
 }
 @media screen and (max-width: 960px){
     .dsk-only{
