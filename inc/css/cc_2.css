@@ -35,17 +35,12 @@ a.nav-link{
 }
 #intro {
     background: url(../img/ccbkgrd.jpg) center center no-repeat #000;
-    height: 70vh;
     margin-top: -10vh;
     background-size: cover;
 }
-.identity-wrap{
-    position: relative;
-    top: calc(30vh - 100px);
-}
+
 #intro h2{
     font-size: 6rem;
-    margin-left: 20%;
     color:  #FFF;
     font-family: 'Abril fatface', 'Garamond Pro','Helvetica', sans-serif;
 }
@@ -115,6 +110,9 @@ button.navbar-toggler{
     border: 1px solid #a05c09;
     width: 100%;
 }
+.tagline {
+    margin-top: 15vh;
+}
 @media screen and (max-width: 960px){
     .dsk-only{
         display: none;
@@ -124,6 +122,15 @@ button.navbar-toggler{
     }
     #portfolio .card {
         max-width: 47.5%
+    }
+     #intro .tagline {
+        text-shadow: 0px 0px 5px #000;
+        font-size: 4rem;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+    #portfolio h2{
+        font-size: 2rem;
     }
 }
 .footer {
@@ -140,5 +147,11 @@ button.navbar-toggler{
 @media screen and (max-width: 600px){
     #portfolio .card {
         max-width: 97.5%;
+    }
+    #intro .tagline {
+        text-shadow: 0px 0px 5px #000;
+        font-size: 2rem;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
     }
 }
