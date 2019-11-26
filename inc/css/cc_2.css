@@ -14,15 +14,6 @@ img {
     height: 10vh;
     z-index: 10;
 }
-.navbar-collapse li{
-    padding: 0px 10px;
-    background :#fafafa;
-}
-.navbar-collapse li a{
-    background: #FFF;
-    padding: 10px;
-    color: #FEC013;
-}
 
 #mainNav img{
     display: block;
@@ -144,6 +135,15 @@ button.navbar-toggler{
     #portfolio h2{
         font-size: 2rem;
     }
+    .navbar-collapse li{
+    padding: 0px 10px;
+    background :#fafafa;
+}
+.navbar-collapse li a{
+    background: #FFF;
+    padding: 10px;
+    color: #FEC013;
+}
 }
 .footer {
     background: #27526d;
