@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
     background: #000;
 }
@@ -88,15 +91,15 @@ button.navbar-toggler{
     border: none;
     box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
 }
-.card img{
+#portfolio .card img{
     border-radius: 0px 0px 0px 0px;
 }
-.card h5{
+#portfolio .card h5{
     font-family: 'Abril Fatface','Garamond Pro', Arial, Helvetica, sans-serif;
     font-size: 2rem;
     color: #666;
 }
-.card h6{
+#portfolio .card h6{
     font-style: italic;
     font-weight: normal;
     color: #999;
@@ -109,7 +112,7 @@ button.navbar-toggler{
     text-shadow: -1px 1px 0px rgba(0,0,0,0.3);
     font-family: 'Helvetica Neue','Helvetica',Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    border: none;
+    border: 1px solid #a05c09;
     width: 100%;
 }
 @media screen and (max-width: 960px){
@@ -118,5 +121,24 @@ button.navbar-toggler{
     }
     .mbl-only{
         display: flex;
+    }
+    #portfolio .card {
+        max-width: 47.5%
+    }
+}
+.footer {
+    background: #27526d;
+}
+.footer img{
+    margin: 0px auto;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 600px){
+    #portfolio .card {
+        max-width: 97.5%;
     }
 }
